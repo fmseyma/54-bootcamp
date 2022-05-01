@@ -3,11 +3,11 @@ Team-54
 
 # Ürün İle İlgili Bilgiler
 ## Takım Elemanları
-Nurullah DEMİR: Product Owner
-F. Şeyma UĞUZ: Scrum Master
-Yusuf ÖZİL: Team Member/Developer
-Aylin ALBAYRAK: Team Member/Developer
-Seyit Mustafa DEMİR: Team Member/Developer
+- Nurullah DEMİR: Product Owner
+- F. Şeyma UĞUZ: Scrum Master
+- Yusuf ÖZİL: Team Member/Developer
+- Aylin ALBAYRAK: Team Member/Developer
+- Seyit Mustafa DEMİR: Team Member/Developer
 
 ## Ürün İsmi
 --Movie App--

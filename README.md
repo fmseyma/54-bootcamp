@@ -13,20 +13,19 @@ Team-54
 --Movie App--
 
 ## Ürün Açıklaması
-- Movie App uygulamamız ile insanların izlemek istediği filmlere ve dizilere daha kolay karar vermesini sağlayacağız. İçerisinde binlerce filmi barındıran uygulamamız aynı zamanda Netflix, Prime vb. platformlarda yayınlanıp yayınlanmadığını ve IMDB puanlarını da gösterecek.
+- XXX uygulaması insanların ders çalışma arkadaşı edinmesini kolaylaştırmak için tasarlanmıştır.  
 
 ## Ürün Özellikleri
-- Filmleri türüne göre ayırma
-- Filmlerin yönetmen, aktör, aktris vb. bilgilerini posteriyle birlikte gösterme
-- IMDB ve Rotten Tomatoes puanlarını gösterme
-- Netflix'te ve Prime'da bulunurluğunu gösterme
+- Seçenekler arasında eşleşebilme ya da direkt bir kullanıcıya mesaj atabilme
+- Kullanıcıya soru yayınlama ve detaylı cevaplayabilme imkanı
+- Profil oluşturma ve profillere göre kişilerle tanışabilme
+- 24 saat süreli mesaj gönderebilme
 
 ## Hedef Kitle
-- Netflix kullanıcıları
-- Prime kullanıcıları
-- Sinema severler
-- Dizi severler
-- 15 - 65 yaş arası kullanıcılar
+- Öğrenciler
+- Sanal arkadaş edinmeyi sevenler
+- İnsanlarla farklı konularda konuşmayı sevenler
+- 15 - 45 yaş arası kullanıcılar
 
 ## Product Backlog URL
 Miro Backlog Board

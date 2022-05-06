@@ -28,7 +28,7 @@ Team-54
 - 15 - 45 yaş arası kullanıcılar
 
 ## Product Backlog URL
-Miro Backlog Board
+https://trello.com/b/GTKdNpFF/bootcamp-54
 
 # Sprint 1
 - **Sprint Notları:** User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.

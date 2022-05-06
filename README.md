@@ -10,7 +10,7 @@ Team-54
 - Seyit Mustafa DEMİR: Team Member/Developer
 
 ## Ürün İsmi
---Movie App--
+--The Ant App--
 
 ## Ürün Açıklaması
 - XXX uygulaması insanların ders çalışma arkadaşı edinmesini kolaylaştırmak için tasarlanmıştır.  

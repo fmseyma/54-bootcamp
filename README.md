@@ -29,6 +29,7 @@ Team-54
 
 ## Product Backlog URL
 https://trello.com/b/GTKdNpFF/team-54
+
 ---
 # Sprint 1
 - **Sprint Notları:** User Story'ler product backlog'ların içine yazılmıştır. Product backlog item'lara tıklandığında hikayelerin detayları okunabilir.
@@ -55,9 +56,9 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 -**Diğer Notlar:**
 - N/A
 ---
-#Sprint 2 
+# Sprint 2 
 
 ---
-#Sprint 3
+# Sprint 3
 
 ---

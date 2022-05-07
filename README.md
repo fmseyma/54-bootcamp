@@ -45,7 +45,7 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 - **Daily Scrum:** Daily Scrum toplantılarının zamansal sebeplerden ötürü Slack üzerinden yapılmasına karar verilmiştir. Daily Scrum toplantısı örneği jpeg veya word olarak Readme'de tarafımızdan paylaşılmaktadır: Sprint 1 Daily Scrum Chats
 
 - **Sprint board update:** Sprint board screenshotları:
-- **Ürün Durumu:** Ekran görüntüleri:
+- **Ürün Durumu:** Ekran görüntüleri: https://docs.google.com/document/d/1ijkMgaGoMFXXMxnLoQMnNM1lL2wNwh4G/edit?usp=sharing&ouid=102652503121626229278&rtpof=true&sd=true
 - **Sprint Review:** Alınan kararlar: Veritabanı oluşturması email ile toplanacak veriler için gerekli görülmüştür. Fakat bir yandan da veritabanı form sayfası için gerekli olmamıştır. O sebeple PBI bir sonraki sprint'e aktarılmıştır. Çıkan ürünün çalışmasında ve testlerinde bir problem görülmemiştir. Ekstra koyulması gereken özellikler belirlenmiştir. Sprint Review katılımcıları: ......
 - **Sprint Retrospective:**
 

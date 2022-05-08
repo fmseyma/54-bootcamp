@@ -46,7 +46,7 @@ https://trello.com/b/GTKdNpFF/apollo-54
 
 - **Daily Scrum:** Daily Scrum toplantılarının herkesin en çok kullandığı uygulama olan Whatsapp üzerinden yapılmasına karar verilmiştir. En hızlı mesajlaşma buradan sağlanmıştır. Discord üzerinden sesli toplantılar düzenlenmiştir. Neredeyse hergün Discord üzerinden Daily Scrum toplantıları yapılmıştır. Daily Scrum toplantıları ekran görüntüleri verilen linkte bulunan dosyada ekran görüntüleri şeklinde eklenmiştir. Daily Scrum Ekran Görüntüleri Linki: https://docs.google.com/document/d/1dgiwNjwocyDEeRxC7xYNfeqhsqaLbTsh8DqO4l3UKFA/edit?usp=sharing
 
-- **Sprint board update:** Sprint board screenshotları:
+- **Sprint board update:** Sprint board screenshotları: https://docs.google.com/document/d/1gbOlgLmin2OKFhbawr-qUsQNiGFEpx3LqAe1ibR1OXI/edit?usp=sharing
 - **Ürün Durumu:** Ekran görüntüleri: https://docs.google.com/document/d/1ijkMgaGoMFXXMxnLoQMnNM1lL2wNwh4G/edit?usp=sharing&ouid=102652503121626229278&rtpof=true&sd=true
 - **Sprint Review:** Alınan kararlar: Veritabanı oluşturması email ile toplanacak veriler için gerekli görülmüştür. Fakat bir yandan da veritabanı form sayfası için gerekli olmamıştır. O sebeple PBI bir sonraki sprint'e aktarılmıştır. Çıkan ürünün çalışmasında ve testlerinde bir problem görülmemiştir. Ekstra koyulması gereken özellikler belirlenmiştir. Sprint Review katılımcıları: ......
 - **Sprint Retrospective:**

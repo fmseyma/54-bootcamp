@@ -10,7 +10,7 @@ APOLLO - 54
 - Seyit Mustafa DEMİR: Team Member/Developer
 
 ## Ürün İsmi
---The Ant App--
+--Formica--
 
 ## Ürün Açıklaması
 - XXX uygulaması insanların ders çalışma arkadaşı edinmesini kolaylaştırmak için tasarlanmıştır.  

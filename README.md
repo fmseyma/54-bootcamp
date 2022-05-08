@@ -42,7 +42,7 @@ https://trello.com/b/GTKdNpFF/apollo-54
 
 - **Puan tamamlama mantığı:** Toplamda proje boyunca tamamlanması gereken 400 Puan bulunmaktadır. Her Sprint'te 100 Puan tamamlanmasına karar verilmiştir.
 
-- **Backlog düzeni ve Story seçimleri:** Backlog bu sprintte tamamlanması plananlanan User Stort'leri içermektedir. Story'ler yapılacak işlere (task'lere) bölünmüştür. Trello Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
+- **Backlog düzeni ve Story seçimleri:** Backlog bu sprintte tamamlanması plananlanan User Story'leri içermektedir. Story'ler yapılacak işlere (task'lere) bölünmüştür. Trello Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
 - **Daily Scrum:** Daily Scrum toplantılarının herkesin en çok kullandığı uygulama olan Whatsapp üzerinden yapılmasına karar verilmiştir. En hızlı mesajlaşma buradan sağlanmıştır. Discord üzerinden sesli toplantılar düzenlenmiştir. Neredeyse hergün Discord üzerinden Daily Scrum toplantıları yapılmıştır. Daily Scrum toplantıları ekran görüntüleri verilen linkte bulunan dosyada ekran görüntüleri şeklinde eklenmiştir. Daily Scrum Ekran Görüntüleri Linki: https://docs.google.com/document/d/1dgiwNjwocyDEeRxC7xYNfeqhsqaLbTsh8DqO4l3UKFA/edit?usp=sharing
 

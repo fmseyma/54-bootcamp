@@ -50,7 +50,7 @@ https://trello.com/b/GTKdNpFF/apollo-54
 
 - **Ürün Durumu:** Ekran görüntüleri: https://docs.google.com/document/d/1ijkMgaGoMFXXMxnLoQMnNM1lL2wNwh4G/edit?usp=sharing&ouid=102652503121626229278&rtpof=true&sd=true
 
-- **Sprint Review:** Alınan kararlar:Kodlamaya başlansa da hız kazanılması planlanmıştır. Bu konuda eksikleri olanların ekip içinden birileri ile iletişime geçip aktif öğrenme sürecinde bulunması gerekmektedir. Herkesin günlük çalışmalara katılmasını sağlamak için sprint planlama toplantısında belirlenen saatlerde görüşmeler sağlanmalıdır. Müsait olamayanlarla çalışma notları o akşam paylaşılmalıdır. SQL, Inherited Widget ve Riverpod için gerekli kurumların yapılması planlanmıştır. Böylece vakit kaybı yaşanmasının önüne geçilecektir. Sprint Review katılımcıları: Nurullah DEMİR, F. Şeyma UĞUZ, Yusuf ÖZİL, Aylin ALBAYRAK, Seyit Mustafa DEMİR
+- **Sprint Review:** Alınan kararlar:Kodlamaya başlansa da hız kazanılması planlanmıştır. Bu konuda eksikleri olanların ekip içinden birileri ile iletişime geçip aktif öğrenme sürecinde bulunması gerekmektedir. Herkesin günlük çalışmalara katılmasını sağlamak için sprint planlama toplantısında belirlenen saatlerde görüşmeler sağlanmalıdır. Müsait olamayanlarla çalışma notları o akşam paylaşılmalıdır. SQL, Inherited Widget ve Riverpod için gerekli kurumların yapılması planlanmıştır. Böylece vakit kaybı yaşanmasının önüne geçilecektir. Sprint Review katılımcıları: Nurullah DEMİR, F. Şeyma UĞUZ, Yusuf ÖZİL, Seyit Mustafa DEMİR
 
 - **Sprint Retrospective:**
   - Tasarım aşamasında güzel bir hız ve birlikte çalışma ortamı sağlanmıştır, bunların kodlama için de tüm ekibe yayılması gerekmektedir.

@@ -1,5 +1,5 @@
 # Takım İsmi
-Team-54
+APOLLO - 54
 
 # Ürün İle İlgili Bilgiler
 ## Takım Elemanları

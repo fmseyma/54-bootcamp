@@ -32,7 +32,7 @@ APOLLO - 54
 - 15 - 45 yaş arası kullanıcılar
 
 ## Product Backlog URL
-https://trello.com/b/GTKdNpFF/apollo-54
+https://trello.com/b/GTKdNpFF/apollo-54sprint1
 
 ---
 # Sprint 1
@@ -40,7 +40,7 @@ https://trello.com/b/GTKdNpFF/apollo-54
 
 - **Sprint içinde tamamlanması tahmin edilen puan:** 100 Puan
 
-- **Puan tamamlama mantığı:** Toplamda proje boyunca tamamlanması gereken 400 Puan bulunmaktadır. Her Sprint'te 100 Puan tamamlanmasına karar verilmiştir.
+- **Puan tamamlama mantığı:** Toplamda proje boyunca tamamlanması gereken 400 Puan bulunmaktadır. İlk Sprint'te 100 Puan, ikinci Sprint'te 200 Puan ve üçüncü Sprint'te 100 Puan tamamlanmasına karar verilmiştir.
 
 - **Backlog düzeni ve Story seçimleri:** Backlog bu sprintte tamamlanması plananlanan User Story'leri içermektedir. Story'ler yapılacak işlere (task'lere) bölünmüştür. Trello Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
@@ -64,5 +64,35 @@ https://trello.com/b/GTKdNpFF/apollo-54
 ---
 # Sprint 2 
 
+## Product Backlog URL
+https://trello.com/b/YWJlJQsE/apollo-54sprint21
+
+---
+# Sprint 1
+- **Sprint Notları:** Backlog item'lara tıklandığında User Story'lerin detayları okunabilir. Her User Story için verilen puanlar ve tasklara verilen puanlar açıklamalarda verilmiştir.
+
+- **Sprint içinde tamamlanması tahmin edilen puan:** 100 Puan
+
+- **Puan tamamlama mantığı:** Toplamda proje boyunca tamamlanması gereken 400 Puan bulunmaktadır. İlk Sprint'te 100 Puan, ikinci Sprint'te 200 Puan ve üçüncü Sprint'te 100 Puan tamamlanmasına karar verilmiştir.
+
+- **Backlog düzeni ve Story seçimleri:** Backlog bu sprintte tamamlanması plananlanan User Story'leri içermektedir. Story'ler yapılacak işlere (task'lere) bölünmüştür. Trello Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
+
+- **Daily Scrum:** Daily Scrum toplantılarının herkesin en çok kullandığı uygulama olan Whatsapp üzerinden yapılmasına karar verilmiştir. En hızlı mesajlaşma buradan sağlanmıştır. Discord üzerinden sesli toplantılar düzenlenmiştir. Neredeyse hergün Discord üzerinden Daily Scrum toplantıları yapılmıştır. Daily Scrum toplantıları ekran görüntüleri verilen linkte bulunan dosyada ekran görüntüleri şeklinde eklenmiştir. Daily Scrum Ekran Görüntüleri Linki: https://docs.google.com/document/d/1dgiwNjwocyDEeRxC7xYNfeqhsqaLbTsh8DqO4l3UKFA/edit?usp=sharing
+
+- **Sprint board update:** Sprint board screenshotları: https://docs.google.com/document/d/1gbOlgLmin2OKFhbawr-qUsQNiGFEpx3LqAe1ibR1OXI/edit?usp=sharing
+
+- **Ürün Durumu:** Ekran görüntüleri: https://docs.google.com/document/d/1ijkMgaGoMFXXMxnLoQMnNM1lL2wNwh4G/edit?usp=sharing&ouid=102652503121626229278&rtpof=true&sd=true
+
+- **Sprint Review:** Alınan kararlar:Kodlamaya başlansa da hız kazanılması planlanmıştır. Bu konuda eksikleri olanların ekip içinden birileri ile iletişime geçip aktif öğrenme sürecinde bulunması gerekmektedir. Herkesin günlük çalışmalara katılmasını sağlamak için sprint planlama toplantısında belirlenen saatlerde görüşmeler sağlanmalıdır. Müsait olamayanlarla çalışma notları o akşam paylaşılmalıdır. SQL, Inherited Widget ve Riverpod için gerekli kurumların yapılması planlanmıştır. Böylece vakit kaybı yaşanmasının önüne geçilecektir. Sprint Review katılımcıları: Nurullah DEMİR, F. Şeyma UĞUZ, Yusuf ÖZİL, Seyit Mustafa DEMİR
+
+- **Sprint Retrospective:**
+  - Tasarım aşamasında güzel bir hız ve birlikte çalışma ortamı sağlanmıştır, bunların kodlama için de tüm ekibe yayılması gerekmektedir.
+  - Sprint raporlamasında gecikmeleri engellemek için oluşturulan Drive dosyasında birkaç gün ara ile düzenlemeler yapılmalıdır. 
+  - Tüm dosyalar Drive'da bulunmalı ve herkese açık olmalıdır.
+  - Daily Scrum'lar ve çalışmalar Discord üzerinden yapılsa da geri dönüp bakıldığında kanıt oluşturması için yazılı halde paylaşılmalıdır.
+  - Birlikte çalışma kültürünü yerleştirmek için herkesin sorumlu olduğu widget olsa da en az bir ortak edinmesi gerekmektedir ve birlikte geliştirmeler yapılmalıdır. 
+
+-**Diğer Notlar:**
+- N/A
 ---
 # Sprint 3

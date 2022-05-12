@@ -75,11 +75,11 @@ https://trello.com/b/YWJlJQsE/apollo-54sprint21
 
 - **Backlog düzeni ve Story seçimleri:** Backlog bu sprintte tamamlanması plananlanan User Story'leri içermektedir. Story'ler yapılacak işlere (task'lere) bölünmüştür. Trello Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
-- **Daily Scrum:** Daily Scrum toplantılarının herkesin en çok kullandığı uygulama olan Whatsapp üzerinden yapılmasına karar verilmiştir. En hızlı mesajlaşma buradan sağlanmıştır. Discord üzerinden sesli toplantılar düzenlenmiştir. Neredeyse hergün Discord üzerinden Daily Scrum toplantıları yapılmıştır. Daily Scrum toplantıları ekran görüntüleri verilen linkte bulunan dosyada ekran görüntüleri şeklinde eklenmiştir. Daily Scrum Ekran Görüntüleri Linki: 
+- **Daily Scrum:** Daily Scrum toplantılarının herkesin en çok kullandığı uygulama olan Whatsapp üzerinden yapılmasına karar verilmiştir. En hızlı mesajlaşma buradan sağlanmıştır. Discord üzerinden sesli toplantılar düzenlenmiştir. Neredeyse hergün Discord üzerinden Daily Scrum toplantıları yapılmıştır. Daily Scrum toplantıları ekran görüntüleri verilen linkte bulunan dosyada ekran görüntüleri şeklinde eklenmiştir. Daily Scrum Ekran Görüntüleri Linki: https://docs.google.com/document/d/1DsKd5hMG0-KXli934hPssFYIlJr6LHD7emBCgCCaQHU/edit?usp=sharing
 
-- **Sprint board update:** Sprint board screenshotları: 
+- **Sprint board update:** Sprint board screenshotları: https://docs.google.com/document/d/1r0tWxM3YH67CcX3qVwfKBZLmzgNeCNXwaEJ8Sw4UZrQ/edit?usp=sharing
 
-- **Ürün Durumu:** Ekran görüntüleri: 
+- **Ürün Durumu:** Ekran görüntüleri: https://docs.google.com/document/d/1VDOyQZAF1MnlqZCZtH524sM3UXrjlK8h/edit?usp=sharing&ouid=102652503121626229278&rtpof=true&sd=true
 
 - **Sprint Review:** Alınan kararlar:          Sprint Review katılımcıları: Nurullah DEMİR, F. Şeyma UĞUZ, Yusuf ÖZİL, Seyit Mustafa DEMİR
 

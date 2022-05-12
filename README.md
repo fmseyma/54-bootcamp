@@ -60,5 +60,3 @@ Story'ler yapılacak işlere (task'lere) bölünmüştür. Miro Board'da gözük
 
 ---
 # Sprint 3
-
----

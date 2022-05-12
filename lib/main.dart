@@ -15,6 +15,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'antello',
       theme: Themes.primaryTheme,
+      showSemanticsDebugger: false,
     
       home: const HomePage(),
     );

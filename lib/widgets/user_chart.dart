@@ -17,12 +17,12 @@ class UserChart extends StatelessWidget {
         clipBehavior: Clip.hardEdge,
         padding: const EdgeInsets.only(top: 8),
         constraints: const BoxConstraints(maxHeight: 250),
-        decoration: BoxDecoration(
+        decoration: const BoxDecoration(
             color: Colors.white,
-            borderRadius: BorderRadius.only(
-                bottomLeft: Radius.circular(30),
+            borderRadius:  BorderRadius.only(
+                bottomLeft:  Radius.circular(30),
                 bottomRight: Radius.circular(30),
-                topLeft: Radius.circular(50),
+                topLeft:  Radius.circular(50),
                 topRight: Radius.circular(50),
                 )),
         child: Stack(
@@ -99,13 +99,13 @@ class UserChart extends StatelessWidget {
                       onPressed: () {
                         print("pressed on close");
                       },
-                      icon: Icon(Icons.close),
+                      icon: const Icon(Icons.close),
                     ),
                     IconButton(
                       onPressed: () {
                         print("pressed on information");
                       },
-                      icon: Icon(Icons.info),
+                      icon: const Icon(Icons.info),
                     ),
                   ],
                 ),

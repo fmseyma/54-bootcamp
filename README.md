@@ -81,7 +81,7 @@ https://trello.com/b/YWJlJQsE/apollo-54sprint21
 
 - **Ürün Durumu:** Ekran görüntüleri: https://docs.google.com/document/d/1VDOyQZAF1MnlqZCZtH524sM3UXrjlK8h/edit?usp=sharing&ouid=102652503121626229278&rtpof=true&sd=true
 
-- **Sprint Review:** Alınan kararlar:          Sprint Review katılımcıları: Nurullah DEMİR, F. Şeyma UĞUZ, Yusuf ÖZİL, Seyit Mustafa DEMİR
+- **Sprint Review:** Alınan kararlar:          Sprint Review katılımcıları: 
 
 - **Sprint Retrospective:**
   -           

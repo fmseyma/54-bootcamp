@@ -41,15 +41,15 @@ https://trello.com/b/YWJlJQsE/apollo-54sprint21
 # Sprint 1
 - **Sprint Notları:** Backlog item'lara tıklandığında User Story'lerin detayları okunabilir. Her User Story için verilen puanlar ve tasklara verilen puanlar açıklamalarda verilmiştir.
 
-- **Sprint içinde tamamlanması tahmin edilen puan:** 100 Puan
+- **Sprint İçinde Tamamlanması Tahmin Edilen Puan:** 100 Puan
 
-- **Puan tamamlama mantığı:** Toplamda proje boyunca tamamlanması gereken 400 Puan bulunmaktadır. İlk Sprint'te 100 Puan, ikinci Sprint'te 200 Puan ve üçüncü Sprint'te 100 Puan tamamlanmasına karar verilmiştir.
+- **Puan Tamamlama Mantığı:** Toplamda proje boyunca tamamlanması gereken 400 Puan bulunmaktadır. İlk Sprint'te 100 Puan, ikinci Sprint'te 200 Puan ve üçüncü Sprint'te 100 Puan tamamlanmasına karar verilmiştir.
 
-- **Backlog düzeni ve Story seçimleri:** Backlog bu sprintte tamamlanması plananlanan User Story'leri içermektedir. Story'ler yapılacak işlere (task'lere) bölünmüştür. Trello Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
+- **Backlog Düzeni ve Story Seçimleri:** Backlog bu sprintte tamamlanması plananlanan User Story'leri içermektedir. Story'ler yapılacak işlere (task'lere) bölünmüştür. Trello Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
 - **Daily Scrum:** Daily Scrum toplantılarının herkesin en çok kullandığı uygulama olan Whatsapp üzerinden yapılmasına karar verilmiştir. En hızlı mesajlaşma buradan sağlanmıştır. Discord üzerinden sesli toplantılar düzenlenmiştir. Neredeyse hergün Discord üzerinden Daily Scrum toplantıları yapılmıştır. Daily Scrum toplantıları ekran görüntüleri verilen linkte bulunan dosyada ekran görüntüleri şeklinde eklenmiştir. Daily Scrum Ekran Görüntüleri Linki: https://docs.google.com/document/d/1dgiwNjwocyDEeRxC7xYNfeqhsqaLbTsh8DqO4l3UKFA/edit?usp=sharing
 
-- **Sprint board update:** Sprint board screenshotları: https://docs.google.com/document/d/1gbOlgLmin2OKFhbawr-qUsQNiGFEpx3LqAe1ibR1OXI/edit?usp=sharing
+- **Sprint Board Update:** Sprint board screenshotları: https://docs.google.com/document/d/1gbOlgLmin2OKFhbawr-qUsQNiGFEpx3LqAe1ibR1OXI/edit?usp=sharing
 
 - **Ürün Durumu:** Ekran görüntüleri: https://docs.google.com/document/d/1ijkMgaGoMFXXMxnLoQMnNM1lL2wNwh4G/edit?usp=sharing&ouid=102652503121626229278&rtpof=true&sd=true
 
@@ -69,15 +69,15 @@ https://trello.com/b/YWJlJQsE/apollo-54sprint21
 
 - **Sprint Notları:** Backlog item'lara tıklandığında User Story'lerin detayları okunabilir. Her User Story için verilen puanlar ve tasklara verilen puanlar açıklamalarda verilmiştir.
 
-- **Sprint içinde tamamlanması tahmin edilen puan:** 200 Puan
+- **Sprint İçinde Tamamlanması Tahmin Edilen Puan:** 200 Puan
 
-- **Puan tamamlama mantığı:** Toplamda proje boyunca tamamlanması gereken 400 Puan bulunmaktadır. İlk Sprint'te 100 Puan, ikinci Sprint'te 200 Puan ve üçüncü Sprint'te 100 Puan tamamlanmasına karar verilmiştir.
+- **Puan Tamamlama Mantığı:** Toplamda proje boyunca tamamlanması gereken 400 Puan bulunmaktadır. İlk Sprint'te 100 Puan, ikinci Sprint'te 200 Puan ve üçüncü Sprint'te 100 Puan tamamlanmasına karar verilmiştir.
 
-- **Backlog düzeni ve Story seçimleri:** Backlog bu sprintte tamamlanması plananlanan User Story'leri içermektedir. Story'ler yapılacak işlere (task'lere) bölünmüştür. Trello Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
+- **Backlog Düzeni ve Story Seçimleri:** Backlog bu sprintte tamamlanması plananlanan User Story'leri içermektedir. Story'ler yapılacak işlere (task'lere) bölünmüştür. Trello Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 
 - **Daily Scrum:** Daily Scrum toplantılarının herkesin en çok kullandığı uygulama olan Whatsapp üzerinden yapılmasına karar verilmiştir. En hızlı mesajlaşma buradan sağlanmıştır. Discord üzerinden sesli toplantılar düzenlenmiştir. Neredeyse hergün Discord üzerinden Daily Scrum toplantıları yapılmıştır. Daily Scrum toplantıları ekran görüntüleri verilen linkte bulunan dosyada ekran görüntüleri şeklinde eklenmiştir. Daily Scrum Ekran Görüntüleri Linki: https://docs.google.com/document/d/1DsKd5hMG0-KXli934hPssFYIlJr6LHD7emBCgCCaQHU/edit?usp=sharing
 
-- **Sprint board update:** Sprint board screenshotları: https://docs.google.com/document/d/1r0tWxM3YH67CcX3qVwfKBZLmzgNeCNXwaEJ8Sw4UZrQ/edit?usp=sharing
+- **Sprint Board Update:** Sprint board screenshotları: https://docs.google.com/document/d/1r0tWxM3YH67CcX3qVwfKBZLmzgNeCNXwaEJ8Sw4UZrQ/edit?usp=sharing
 
 - **Ürün Durumu:** Ekran görüntüleri: https://docs.google.com/document/d/1VDOyQZAF1MnlqZCZtH524sM3UXrjlK8h/edit?usp=sharing&ouid=102652503121626229278&rtpof=true&sd=true
 

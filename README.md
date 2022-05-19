@@ -63,7 +63,7 @@ https://trello.com/b/GTKdNpFF/apollo-54sprint1
 - N/A
 
 ## Product Backlog URL (İKİNCİ SPRİNT BOARD)
-https://trello.com/b/YWJlJQsE/apollo-54sprint21
+https://trello.com/b/YWJlJQsE/apollo-54sprint2
 
 ---
 # Sprint 2 
@@ -72,7 +72,7 @@ https://trello.com/b/YWJlJQsE/apollo-54sprint21
 
 - **Sprint İçinde Tamamlanması Tahmin Edilen Puan:** 200 Puan
 
-- **Puan Tamamlama Mantığı:** Toplamda proje boyunca tamamlanması gereken 400 Puan bulunmaktadır. İlk Sprint'te 100 Puan, ikinci Sprint'te 200 Puan ve üçüncü Sprint'te 100 Puan tamamlanmasına karar verilmiştir.
+- **Puan Tamamlama Mantığı:** Toplamda proje boyunca tamamlanması gereken 400 Puan bulunmaktadır. İlk Sprint'te 100 Puan, ikinci Sprint'te 200 Puan ve üçüncü Sprint'te 100 Puan tamamlanmasına karar verilmiştir. İlk Sprint'te tamamlanamayan 20 puan da ikinci sprint puanlarına dahil edilmiştir.
 
 - **Backlog Düzeni ve Story Seçimleri:** Backlog bu sprintte tamamlanması plananlanan User Story'leri içermektedir. Story'ler yapılacak işlere (task'lere) bölünmüştür. Trello Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 

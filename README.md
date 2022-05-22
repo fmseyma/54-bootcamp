@@ -31,11 +31,12 @@ APOLLO - 54
 - İnsanlarla farklı konularda konuşmayı sevenler
 - 15 - 45 yaş arası kullanıcılar
 
+---
+# Sprint 1
+
 ## Product Backlog URL (BİRİNCİ SPRİNT BOARD)
 https://trello.com/b/GTKdNpFF/apollo-54sprint1
 
----
-# Sprint 1
 - **Sprint Notları:** Backlog item'lara tıklandığında User Story'lerin detayları okunabilir. Her User Story için verilen puanlar ve tasklara verilen puanlar açıklamalarda verilmiştir.
 
 - **Sprint İçinde Tamamlanması Tahmin Edilen Puan:** 100 Puan
@@ -62,11 +63,11 @@ https://trello.com/b/GTKdNpFF/apollo-54sprint1
 -**Diğer Notlar:**
 - N/A
 
-## Product Backlog URL (İKİNCİ SPRİNT BOARD)
-https://trello.com/b/YWJlJQsE/apollo-54sprint2
-
 ---
 # Sprint 2 
+
+## Product Backlog URL (İKİNCİ SPRİNT BOARD)
+https://trello.com/b/YWJlJQsE/apollo-54sprint2
 
 - **Sprint Notları:** Backlog item'lara tıklandığında User Story'lerin detayları okunabilir. Her User Story için verilen puanlar ve tasklara verilen puanlar açıklamalarda verilmiştir.
 

@@ -1,6 +1,5 @@
 import 'package:antello/classes/app_user.dart';
 import 'package:flutter/material.dart';
-import 'package:antello/widgets/push_button.dart';
 import '../widgets/user_chart.dart';
 
 class HomePage extends StatefulWidget {
@@ -24,7 +23,7 @@ class _HomePageState extends State<HomePage> {
             UserChart(
               appuser: AppUser(ad: "Yusuf", soyad: "ÖZil", bio: "slkflksd"),
             ),
-            PushButton(butonyazisi:"klj",newroute: "/second"),
+
           ],
         ),
       )),

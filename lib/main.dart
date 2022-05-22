@@ -1,4 +1,5 @@
 
+import 'package:antello/screens/home_page.dart';
 import 'package:antello/screens/questions_page.dart';
 import 'package:antello/themes/themes.dart';
 import 'package:flutter/material.dart';
@@ -16,9 +17,10 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'antello',
       theme: Themes.primaryTheme,
-      initialRoute: '/',
+      initialRoute: 'Questions',
       routes: {
-        '/': (context) => const QuestionsPage(),
+        'Questions': (context) => const QuestionsPage(),
+        'Home':(context)=>const HomePage(),
       },
     );
   }

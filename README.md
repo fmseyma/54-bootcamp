@@ -83,13 +83,14 @@ https://trello.com/b/YWJlJQsE/apollo-54sprint2
 
 - **Ürün Durumu:** Ekran görüntüleri: https://docs.google.com/document/d/1VDOyQZAF1MnlqZCZtH524sM3UXrjlK8h/edit?usp=sharing&ouid=102652503121626229278&rtpof=true&sd=true
 
-- **Sprint Review:** Alınan kararlar:          Sprint Review katılımcıları: 
+- **Sprint Review:** Alınan kararlar: Son sprint olduğu için hızlanmak ve projenin ana fikrinin çalışmasını sağlamak önceliği tekrar konuşulmuştur. Bu sebeple henüz kodu yazılmamış widget'ların bazılarını sadece buton olarak verip çalışması için gerekli geliştirmeler yapılmamasına karar verilmiştir. Widget'ların çoğu bittiğinden database ile gerekli bağlantıların ilk hafta içerinde yapılıp hafta sonuna kadar çalışan bir taslak oluşturulması planlanmıştır. Bu sayede kullanıcı verilerinin alınması ve kaydedilmesi sağlanacaktır. 
+Ekip arkadaşlarımızdan çoğunun sınav haftası olduğundan günlük toplantı saatlerinin süresinin sadece kod yazma üzerine ayrılması ve diğer konuşmaların WhatsApp üzerinden sürdürülmesine karar verilmiştir. Sprint Review katılımcıları: Nurullah DEMİR, F. Şeyma UĞUZ, Yusuf ÖZİL, Seyit Mustafa DEMİR, Aylin ALBAYRAK
 
 - **Sprint Retrospective:**
-  -           
-  -         
-  -           
-  -          
+  - Kodlama için çalışmalar yavaş başlasa da planlanan bir çok task tamamlanmıştır.       
+  - İlk sprint'in aksine gerekli ekran görüntüleri birkaç gün ara ile güncellendiği için proje yönetimi ve sprint raporlama süreci çok daha rahat geçmiştir.       
+  - Herkesin gerek bedenen ve de gerek ruhen zorlu günler geçirmesine karşın hergün iletişime geçilmesi ekip motivasyonunun kaybedilmemesini sağlamıştır. 
+  - Birlikte çalışma kültürü yerleşmeye başlasa da istenen verim alınamamıştır. Bu verimin artması ve projenin sprint sonuna yetişebilmesi alınan kararlara uyulması gerekmektedir.               
   -            
 
 -**Diğer Notlar:**

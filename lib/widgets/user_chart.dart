@@ -4,16 +4,29 @@ import 'package:antello/widgets/photo_chart.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class UserChart extends StatelessWidget {
-  final AppUser appuser;
 
-  const UserChart({Key? key, required this.appuser}) : super(key: key);
+///Arkadaşlar [UserChart]; [HomePage] içinde alt alta kullanıcı
+///profil ve bilgilerinin görüntülenebilmesi için hazırlanan
+/// Kullanıcı bilgi kartlarıdır
+
+class UserChart extends StatelessWidget {
+
+  /// Her bir User [AppUser] classından üretilen bir nesnedir. 
+  /// Her bir [UserChart] bilgileri çekebileceği [AppUser] nesnesine
+  /// ihtiyaç duyar. [appUser] isminin sebebi Auth user ile karışmaması için
+  final AppUser appUser;
+
+
+  const UserChart({Key? key, required this.appUser}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
     return Padding(
+      ///Bu padding parent widget içinde bir padding oluşturur
       padding: const EdgeInsets.all(8.0),
       child: Container(
+      ///Beyaz alt katman widgeti
+
         clipBehavior: Clip.hardEdge,
         padding: const EdgeInsets.only(top: 8),
         constraints: const BoxConstraints(maxHeight: 250),
@@ -59,13 +72,14 @@ class UserChart extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.center,
                 children: [
-                  const PhotoChart(),
+                  /// User için profil fotoğrafı [PhotoChart]
+                  PhotoChart(appUser: appUser,),
                   InkWell(
                     onTap: () {
                       print("pressed on name");
                     },
                     child: Text(
-                      appuser.ad + " " + appuser.soyad,
+                      appUser.ad + " " + appUser.soyad,
                       style: GoogleFonts.oswald(fontWeight: FontWeight.bold),
                     ),
                   ),
@@ -77,7 +91,7 @@ class UserChart extends StatelessWidget {
                       padding: const EdgeInsets.only(
                           left: 16, right: 16, top: 8, bottom: 8),
                       child: Text(
-                        "    " + appuser.bio,
+                        "    " + appUser.bio,
                         style: GoogleFonts.oswald(fontWeight: FontWeight.w100),
                         textAlign: TextAlign.justify,
                         softWrap: true,

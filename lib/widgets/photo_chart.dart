@@ -1,8 +1,12 @@
 import 'package:antello/themes/app_colors.dart';
 import 'package:flutter/material.dart';
 
+import '../classes/app_user.dart';
+
 class PhotoChart extends StatefulWidget {
-  const PhotoChart({Key? key}) : super(key: key);
+  
+  final AppUser appUser;
+  const PhotoChart({Key? key, required this.appUser}) : super(key: key);
 
   @override
   State<PhotoChart> createState() => _PhotoChartState();
@@ -13,18 +17,18 @@ class _PhotoChartState extends State<PhotoChart> {
   Widget build(BuildContext context) {
     return Container(
   
-      constraints: BoxConstraints(maxHeight: 100, maxWidth: 100),
+      constraints: const BoxConstraints(maxHeight: 100, maxWidth: 100),
       child: Stack(
         children: [
           Container(
-            padding: EdgeInsets.all(2),
-            margin: EdgeInsets.all(6),
+            padding: const EdgeInsets.all(2),
+            margin: const EdgeInsets.all(6),
       
             decoration: BoxDecoration(
                 color: AppColors.purple,
                 borderRadius: BorderRadius.circular(100)),
             child: Padding(
-              padding: EdgeInsets.all(1),
+              padding: const EdgeInsets.all(1),
               child: Container(
           
                   decoration: BoxDecoration(
@@ -36,14 +40,14 @@ class _PhotoChartState extends State<PhotoChart> {
 
                decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(100)),
-            margin: EdgeInsets.all(10),
+            margin: const EdgeInsets.all(10),
       clipBehavior: Clip.hardEdge,
 
-            child: Icon(Icons.add_a_photo, size:100,)
+            child: const FittedBox(child:  Icon(Icons.add_a_photo, size:100,))
           ),
           
           
-           Transform.rotate( angle: -3.14/6 ,child: Container( constraints: BoxConstraints.expand(), child: CircularProgressIndicator(value: 0.65, color: AppColors.yellow , strokeWidth: 2, ),)),
+           Transform.rotate( angle: -3.14/6 ,child: Container( constraints: const BoxConstraints.expand(), child: const CircularProgressIndicator(value: 0.65, color: AppColors.yellow , strokeWidth: 2, ),)),
            
            
         ],

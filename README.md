@@ -66,7 +66,7 @@ https://trello.com/b/GTKdNpFF/apollo-54sprint1
 ---
 # Sprint 2 
 
-## Product Backlog URL (İKİNCİ SPRİNT BOARD)
+# Product Backlog URL (İKİNCİ SPRİNT BOARD)
 https://trello.com/b/YWJlJQsE/apollo-54sprint2
 
 - **Sprint Notları:** Backlog item'lara tıklandığında User Story'lerin detayları okunabilir. Her User Story için verilen puanlar ve tasklara verilen puanlar açıklamalarda verilmiştir.

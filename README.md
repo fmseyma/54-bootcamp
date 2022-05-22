@@ -64,7 +64,7 @@ https://trello.com/b/GTKdNpFF/apollo-54sprint1
 - N/A
 
 ---
-# Sprint 2 
+## Sprint 2 
 
 # Product Backlog URL (İKİNCİ SPRİNT BOARD)
 https://trello.com/b/YWJlJQsE/apollo-54sprint2

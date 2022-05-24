@@ -97,3 +97,30 @@ Ekip arkadaşlarımızdan çoğunun sınav haftası olduğundan günlük toplant
 - N/A
 ---
 # Sprint 3
+
+
+## Product Backlog URL (İKİNCİ SPRİNT BOARD)
+https://trello.com/b/YWJlJQsE/apollo-54sprint3
+
+- **Sprint Notları:** Backlog item'lara tıklandığında User Story'lerin detayları okunabilir. Her User Story için verilen puanlar ve tasklara verilen puanlar açıklamalarda verilmiştir.
+
+- **Sprint İçinde Tamamlanması Tahmin Edilen Puan:** 100 Puan
+
+- **Puan Tamamlama Mantığı:** Toplamda proje boyunca tamamlanması gereken 400 Puan bulunmaktadır. İlk Sprint'te 100 Puan, ikinci Sprint'te 200 Puan ve üçüncü Sprint'te 100 Puan tamamlanmasına karar verilmiştir. İkinci Sprint'te tamamlanamayan 50 puan da ikinci sprint puanlarına dahil edilmiştir.
+
+- **Backlog Düzeni ve Story Seçimleri:** Backlog bu sprintte tamamlanması plananlanan User Story'leri içermektedir. Story'ler yapılacak işlere (task'lere) bölünmüştür. Trello Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
+
+- **Daily Scrum:** Daily Scrum toplantılarının herkesin en çok kullandığı uygulama olan Whatsapp üzerinden yapılmasına karar verilmiştir. En hızlı mesajlaşma buradan sağlanmıştır. Discord üzerinden sesli toplantılar düzenlenmiştir. Neredeyse hergün Discord üzerinden Daily Scrum toplantıları yapılmıştır. Daily Scrum toplantıları ekran görüntüleri verilen linkte bulunan dosyada ekran görüntüleri şeklinde eklenmiştir. Daily Scrum Ekran Görüntüleri Linki: 
+
+- **Sprint Board Update:** Sprint board screenshotları: 
+
+- **Ürün Durumu:** Ekran görüntüleri: 
+
+- **Sprint Review:** Alınan kararlar:  Sprint Review katılımcıları: Nurullah DEMİR, F. Şeyma UĞUZ, Yusuf ÖZİL, Seyit Mustafa DEMİR, Aylin ALBAYRAK
+
+- **Sprint Retrospective:**
+  - 
+  -            
+
+-**Diğer Notlar:**
+- N/A

@@ -8,7 +8,6 @@ import 'package:google_fonts/google_fonts.dart';
 ///Arkadaşlar [UserChart]; [HomePage] içinde alt alta kullanıcı
 ///profil ve bilgilerinin görüntülenebilmesi için hazırlanan
 /// Kullanıcı bilgi kartlarıdır
-
 class UserChart extends StatelessWidget {
 
   /// Her bir User [AppUser] classından üretilen bir nesnedir. 
@@ -26,7 +25,6 @@ class UserChart extends StatelessWidget {
       padding: const EdgeInsets.all(8.0),
       child: Container(
       ///Beyaz alt katman widgeti
-
         clipBehavior: Clip.hardEdge,
         padding: const EdgeInsets.only(top: 8),
         constraints: const BoxConstraints(maxHeight: 250),

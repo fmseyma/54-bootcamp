@@ -5,7 +5,11 @@ class AppUser {
 
   AppUser({required this.ad, required this.soyad,required this.bio});
 
+
+
 }
+
+
 
 
 class UserMAnagement{

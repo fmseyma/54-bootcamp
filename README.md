@@ -106,7 +106,7 @@ Ekip arkadaşlarımızdan çoğunun sınav haftası olduğundan günlük toplant
 
 - **Sprint İçinde Tamamlanması Tahmin Edilen Puan:** 100 Puan
 
-- **Puan Tamamlama Mantığı:** Toplamda proje boyunca tamamlanması gereken 400 Puan bulunmaktadır. İlk Sprint'te 100 Puan, ikinci Sprint'te 200 Puan ve üçüncü Sprint'te 100 Puan tamamlanmasına karar verilmiştir. İkinci Sprint'te tamamlanamayan 50 puan da ikinci sprint puanlarına dahil edilmiştir.
+- **Puan Tamamlama Mantığı:** Toplamda proje boyunca tamamlanması gereken 400 Puan bulunmaktadır. İlk Sprint'te 100 Puan, ikinci Sprint'te 200 Puan ve üçüncü Sprint'te 100 Puan tamamlanmasına karar verilmiştir. İkinci Sprint'te tamamlanamayan 40 puan da ikinci sprint puanlarına dahil edilmiştir.
 
 - **Backlog Düzeni ve Story Seçimleri:** Backlog bu sprintte tamamlanması plananlanan User Story'leri içermektedir. Story'ler yapılacak işlere (task'lere) bölünmüştür. Trello Board'da gözüken kırmızı item'lar yapılacak işleri (task) gösterirken, mavi item'lar story'leri temsil etmektedir.
 

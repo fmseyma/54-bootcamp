@@ -10,7 +10,6 @@ class DateTimePicker extends StatefulWidget {
 
 class _DateTimePickerState extends State<DateTimePicker> {
   DateTime date = DateTime.now();
-
   @override
   Widget build(BuildContext context) {
     return Column(children: [

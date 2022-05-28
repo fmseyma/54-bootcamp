@@ -100,7 +100,7 @@ Ekip arkadaşlarımızdan çoğunun sınav haftası olduğundan günlük toplant
 
 
 ## Product Backlog URL (ÜÇÜNCÜ SPRİNT BOARD)
-[https://trello.com/b/YWJlJQsE/apollo-54sprint3](https://trello.com/b/4gdXGui0/apollo-54sprint3)
+https://trello.com/b/4gdXGui0/apollo-54sprint3
 
 - **Sprint Notları:** Backlog item'lara tıklandığında User Story'lerin detayları okunabilir. Her User Story için verilen puanlar ve tasklara verilen puanlar açıklamalarda verilmiştir.
 

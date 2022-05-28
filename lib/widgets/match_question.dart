@@ -7,15 +7,15 @@ import 'package:antello/widgets/photo_chart.dart';
 import 'package:antello/widgets/purple_button.dart';
 import 'package:flutter/material.dart';
 
-class QuestionWidget extends StatefulWidget {
+class MatchQuestionWidget extends StatefulWidget {
   final MatchQuestion matchQuestion;
-  const QuestionWidget({ Key? key,required this.matchQuestion }) : super(key: key);
+  const MatchQuestionWidget({ Key? key,required this.matchQuestion }) : super(key: key);
 
   @override
-  State<QuestionWidget> createState() => _QuestionWidgetState();
+  State<MatchQuestionWidget> createState() => _MatchQuestionWidgetState();
 }
 
-class _QuestionWidgetState extends State<QuestionWidget> {
+class _MatchQuestionWidgetState extends State<MatchQuestionWidget> {
   late MatchQuestion matchQuestion ;
 
   @override

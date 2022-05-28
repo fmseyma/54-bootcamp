@@ -1,6 +1,11 @@
 import 'package:antello/classes/app_user.dart';
 import 'package:antello/scaffold/bottom_navigation_bar.dart';
+import 'package:antello/tabs/explore_tab.dart';
+import 'package:antello/tabs/match_tab.dart';
+import 'package:antello/tabs/profile_tab.dart';
+import 'package:antello/themes/app_colors.dart';
 import 'package:flutter/material.dart';
+import '../tabs/chat_tab.dart';
 import '../widgets/user_chart.dart';
 
 class HomePage extends StatefulWidget {
@@ -10,44 +15,50 @@ class HomePage extends StatefulWidget {
   State<HomePage> createState() => _HomePageState();
 }
 
-class _HomePageState extends State<HomePage> {
+class _HomePageState extends State<HomePage>  with TickerProviderStateMixin  {
+  late TabController controller;
 
   @override
   void initState() {
     // TODO: implement initState
 
-    
+    controller= TabController(length: 4, vsync: this);
     super.initState();
+  }
+  @override
+  void dispose() {
+    // TODO: implement dispose
+    controller.dispose();
+    super.dispose();
   }
 
   int tabindex=0;
+  List<Widget> tabs =[ExploreTab(),MatchTab(),ChatTab(),ProfileTab()];
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: AppColors.background,
       appBar: AppBar(),
       bottomNavigationBar: BottomNavigationWidget( gopage: goPage, currentIndex: tabindex,)
 ,
-      body: SingleChildScrollView(
-          child: Center(
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: [
-            UserChart(
-              appUser: AppUser(ad: "Yusuf", soyad: "ÖZil", bio: "slkflksd"),
-            ),
-           
-          ],
-        ),
-      )),
-    );
+      body: TabBarView( controller: controller, children: tabs,) );
   }
 
   
   goPage(int page){
     print("şu sayfaya geçildi $page");
-    tabindex= page;
+    
+    setState(() {
+       tabindex= page;
+    });
+
+    controller.animateTo(page, duration: Duration(milliseconds:200));
+    if(page==3){
+    Navigator.of(context).pushNamed("SignIn");
+
+    }
+
+
 
 
   

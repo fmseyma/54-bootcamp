@@ -6,6 +6,7 @@ class Themes{
   static ThemeData primaryTheme = ThemeData(
   
   backgroundColor: Colors.blue,
+  
         primarySwatch: Colors.blue,
       );
 

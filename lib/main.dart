@@ -3,6 +3,7 @@ import 'package:antello/firebase_options.dart';
 import 'package:antello/scaffold/bottom_navigation_bar.dart';
 import 'package:antello/screens/home_page.dart';
 import 'package:antello/screens/questions_page.dart';
+import 'package:antello/screens/sign_in_screen.dart';
 import 'package:antello/themes/themes.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
@@ -24,12 +25,14 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-          title: 'antello',
+      title: 'formica',
       theme: Themes.primaryTheme,
-      home: QuestionsPage(),
-      
-      
-      
+      initialRoute: 'Home',
+
+      routes: {
+        'SignIn': (context) => const SignInScreen(),
+        'Home':(context)=>const HomePage(),
+      },
     );
   }
 

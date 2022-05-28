@@ -76,6 +76,7 @@ class _QuestionsPageState extends State<QuestionsPage> {
                   GenderWidget(),
                   BirthdayWidget(),
                   StudyWidget(),
+                  IntroduceWidget(),
                 ],
               ),
             ),

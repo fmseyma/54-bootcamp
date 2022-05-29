@@ -5,6 +5,7 @@ import 'package:antello/screens/home_page.dart';
 import 'package:antello/screens/questions_page.dart';
 import 'package:antello/screens/sign_in_screen.dart';
 import 'package:antello/themes/themes.dart';
+import 'package:antello/utils/email_auth.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 
@@ -16,7 +17,7 @@ void main() async {
   );
   runApp(const MyApp());
 }
-
+final navigatorKey=GlobalKey<NavigatorState>();
 class MyApp extends StatelessWidget {
   const MyApp({Key? key}) : super(key: key);
 
@@ -25,6 +26,8 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      navigatorKey: navigatorKey,
+      scaffoldMessengerKey: Email.messengerKey,
       title: 'formica',
       theme: Themes.primaryTheme,
       initialRoute: 'Home',

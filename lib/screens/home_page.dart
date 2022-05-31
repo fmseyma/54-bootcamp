@@ -21,7 +21,7 @@ class _HomePageState extends State<HomePage> {
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
             UserChart(
-              appuser: AppUser(ad: "Yusuf", soyad: "ÖZil", bio: "slkflksd"),
+              appuser: AppUser(ad: "Yusuf", soyad: "ÖZil", bio: "slkflksd",kullaniciadi: "yusuf",cinsiyet: "erkek",dogumtarihi: DateTime.now(),sifre: 212323),
             ),
 
           ],

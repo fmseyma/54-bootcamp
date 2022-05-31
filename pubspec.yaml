@@ -43,6 +43,7 @@ dependencies:
   url_launcher: ^6.1.2
   firebase_dynamic_links: ^0.5.1
   email_validator: ^2.0.1
+  dropdown_date_picker: ^0.1.1+2
 
 dev_dependencies:
   flutter_test:

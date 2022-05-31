@@ -1,5 +1,6 @@
 
 import 'package:antello/screens/home_page.dart';
+import 'package:antello/screens/profile_page.dart';
 import 'package:antello/screens/questions_page.dart';
 import 'package:antello/screens/sign_page.dart';
 import 'package:antello/themes/themes.dart';
@@ -22,11 +23,12 @@ class MyApp extends StatelessWidget {
       scaffoldMessengerKey: Utils.messengerKey,
       title: 'antello',
       theme: Themes.primaryTheme,
-      initialRoute:"Signİn",
+      initialRoute:"Profile",
       routes: {
         'Questions': (context) => const QuestionsPage(),
         'Home':(context)=>const HomePage(),
         'Signİn':(context)=> const SignPage(),
+        'Profile':(context)=> const ProfilePage(),
       },
     );
   }

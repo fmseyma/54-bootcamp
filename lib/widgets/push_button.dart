@@ -6,12 +6,16 @@ import 'package:google_fonts/google_fonts.dart';
 class PushButton extends StatelessWidget {
   final void Function() function;
    final String butonyazisi;
+   final double width;
+   final double height;
    final Color backgroundColor;
    final Color textColor;
 
    const PushButton({
     Key? key,
     required this.function,
+    this.width=320,
+    this.height=50,
     required this.butonyazisi,
     this.backgroundColor= const Color(0xFF26235C) ,
     this.textColor= Colors.white  ,
@@ -21,7 +25,7 @@ class PushButton extends StatelessWidget {
   Widget build(context) {
     return ElevatedButton(
         style: ElevatedButton.styleFrom(
-            fixedSize: const Size(320, 50),
+            fixedSize: Size(width, height),
             primary: backgroundColor,
             onPrimary: textColor,
             elevation: 6,

@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import '../classes/app_user.dart';
 
 class PhotoChart extends StatefulWidget {
-  
   final AppUser appUser;
-  const PhotoChart({Key? key, required this.appUser}) : super(key: key);
+  final double maxsize;
+  const PhotoChart({Key? key, required this.appUser, this.maxsize =100}) : super(key: key);
 
   @override
   State<PhotoChart> createState() => _PhotoChartState();
@@ -14,52 +14,75 @@ class PhotoChart extends StatefulWidget {
 
 class _PhotoChartState extends State<PhotoChart> {
   @override
+  void didChangeDependencies() {
+    // TODO: implement didChangeDependencies
+    if(widget.appUser.url !=""){setState(() {
+      
+    });}
+    super.didChangeDependencies();
+  }
+  @override
   Widget build(BuildContext context) {
     return Container(
-  
-      constraints: const BoxConstraints(maxHeight: 100, maxWidth: 100),
+      constraints:  BoxConstraints(maxHeight: widget.maxsize, maxWidth: widget.maxsize),
       child: Stack(
         children: [
           Container(
             padding: const EdgeInsets.all(2),
             margin: const EdgeInsets.all(6),
-      
             decoration: BoxDecoration(
                 color: AppColors.purple,
                 borderRadius: BorderRadius.circular(100)),
             child: Padding(
               padding: const EdgeInsets.all(1),
               child: Container(
-          
                   decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(100))),
             ),
           ),
           Container(
+              decoration:
+                  BoxDecoration(borderRadius: BorderRadius.circular(100)),
+              margin: const EdgeInsets.all(10),
+              clipBehavior: Clip.hardEdge,
+              child:  FittedBox(
+                  child:    widget. appUser.url =="" ? Icon(Icons.person, size: 162,):
+              Image.network(
+             widget. appUser.url
+            
+              , 
+             
+              loadingBuilder:(context, child, loadingProgress) => const LinearProgressIndicator(),
+              frameBuilder: (context, child, frame, wasSynchronouslyLoaded) {
+                return const Text("Frame builder");
+              },
+              errorBuilder: (context, error, stackTrace) {
+               return  Text(error.toString() + " stack "+  stackTrace.toString(), textAlign: TextAlign.center,) ;
+              },
 
-               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(100)),
-            margin: const EdgeInsets.all(10),
-      clipBehavior: Clip.hardEdge,
-
-            child: const FittedBox(child:  Icon(Icons.add_a_photo, size:100,))
-          ),
-          
-          
-           Transform.rotate( angle: -3.14/6 ,child: Container( constraints: const BoxConstraints.expand(), child: const CircularProgressIndicator(value: 0.65, color: AppColors.yellow , strokeWidth: 2, ),)),
-           
-           
+              )
+            
+              
+              )),
+          Transform.rotate(
+              angle: -3.14 / 6,
+              child: Container(
+                constraints: const BoxConstraints.expand(),
+                child: const CircularProgressIndicator(
+                  value: 0.65,
+                  color: AppColors.yellow,
+                  strokeWidth: 2,
+                ),
+              )),
         ],
         alignment: Alignment.center,
-        
       ),
     );
   }
 }
 
-class Intrins {
-}
+class Intrins {}
 
 class SideArrowClip extends CustomClipper<Path> {
   @override

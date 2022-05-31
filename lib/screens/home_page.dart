@@ -4,6 +4,7 @@ import 'package:antello/tabs/explore_tab.dart';
 import 'package:antello/tabs/match_tab.dart';
 import 'package:antello/tabs/profile_tab.dart';
 import 'package:antello/themes/app_colors.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import '../tabs/chat_tab.dart';
 import '../widgets/user_chart.dart';
@@ -17,12 +18,34 @@ class HomePage extends StatefulWidget {
 
 class _HomePageState extends State<HomePage>  with TickerProviderStateMixin  {
   late TabController controller;
+  User? _user;
 
   @override
   void initState() {
     // TODO: implement initState
 
     controller= TabController(length: 4, vsync: this);
+      FirebaseAuth.instance.authStateChanges().listen((User? user) async{
+      
+      if (user == null) {
+      
+        debugPrint('User is currently signed out!');
+      } else {
+        UserMAnagement.fromUid(user.uid).then((value) {
+          if(value.birthDate!=""){
+                Navigator.of(context).pushNamed("Home");
+             
+          }else {
+              _user=user;
+          }
+        });
+      
+
+        print('User is signed in!');
+      }
+    });
+
+   
     super.initState();
   }
   @override

@@ -10,7 +10,7 @@ import '/utils/email_auth.dart';
 import '../main.dart';
 
 class SignUp extends StatefulWidget {
-  final Function(bool ,bool) onClickedSignIn;
+  final Function(bool, bool) onClickedSignIn;
   const SignUp({Key? key, required this.onClickedSignIn}) : super(key: key);
 
   @override
@@ -21,6 +21,13 @@ class _SignUpState extends State<SignUp> {
   final formKey = GlobalKey<FormState>();
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
+  TextEditingController isim = TextEditingController(),
+      soyisim = TextEditingController(),
+      nick = TextEditingController(),
+      mail = TextEditingController(),
+      password = TextEditingController(),
+      password1 = TextEditingController();
+
   @override
   void dispose() {
     emailController.dispose();
@@ -37,32 +44,82 @@ class _SignUpState extends State<SignUp> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            SizedBox(height: 40),
-            TextFormField(
-              controller: emailController,
-              cursorColor: Colors.white,
-              textInputAction: TextInputAction.next,
-              autovalidateMode: AutovalidateMode.onUserInteraction,
-              validator: (email) =>
-                  email != null && !EmailValidator.validate(email)
-                      ? " Enter a valid email"
-                      : null,
-              decoration: InputDecoration(
-                labelText: "Email",
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              child: TextFormField(
+                controller: isim,
+                validator: (email) => !(email != null && email!="") ? " Enter a name" : null,
+                decoration: const InputDecoration(
+                  border: UnderlineInputBorder(),
+                  labelText: 'İsim',
+                ),
               ),
             ),
-            SizedBox(
-              height: 5,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              child: TextFormField(
+                controller: soyisim,
+                validator: (email) => !(email != null && email!="") ? " Enter a surname" : null,
+                decoration: const InputDecoration(
+                  border: UnderlineInputBorder(),
+                  labelText: 'Soyisim',
+                ),
+              ),
             ),
-            TextFormField(
-              controller: passwordController,
-              textInputAction: TextInputAction.done,
-              decoration: InputDecoration(labelText: "password"),
-              obscureText: true,
-              autovalidateMode: AutovalidateMode.onUserInteraction,
-              validator: (password) => password != null && password.length < 8
-                  ? "enter min 8 characters"
-                  : null,
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              child: TextFormField(
+                controller: nick,
+                validator: (email) =>
+                    !(email != null && email!="") ? " Enter a nickname" : null,
+                decoration: const InputDecoration(
+                  border: UnderlineInputBorder(),
+                  labelText: 'Kullanıcı Adı',
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              child: TextFormField(
+                controller: emailController,
+                cursorColor: Colors.white,
+                textInputAction: TextInputAction.next,
+                autovalidateMode: AutovalidateMode.onUserInteraction,
+                validator: (email) =>
+                    email != null && !EmailValidator.validate(email)
+                        ? " Enter a valid email"
+                        : null,
+                decoration: InputDecoration(
+                  labelText: "Email",
+                ),
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              child: TextFormField(
+                controller: passwordController,
+                textInputAction: TextInputAction.done,
+                decoration: InputDecoration(labelText: "password"),
+                obscureText: true,
+                autovalidateMode: AutovalidateMode.onUserInteraction,
+                validator: (password) => password != null && password.length < 8
+                    ? "enter min 8 characters"
+                    : null,
+              ),
+            ),
+            Padding(
+              padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
+              child: TextFormField(
+                controller: password1,
+                textInputAction: TextInputAction.done,
+                decoration: InputDecoration(labelText: "password again"),
+                obscureText: true,
+                autovalidateMode: AutovalidateMode.onUserInteraction,
+                validator: (password) =>
+                    password != null && password != password1.text
+                        ? "iki şifre aynı olmalıdır"
+                        : null,
+              ),
             ),
             SizedBox(
               height: 40,
@@ -76,20 +133,18 @@ class _SignUpState extends State<SignUp> {
             SizedBox(
               height: 40,
             ),
-                         InkWell(
-                  onTap: () {
-                     widget.onClickedSignIn(true,false);
-                  },
-                  child: const Text(
-                    "Sign Up",
-                    style: TextStyle(
-                        fontSize: 15,
-                        color:  Color(0xFF26235C),
-                        decoration: TextDecoration.underline),
-                  ),
-                ),
-           
-      
+            InkWell(
+              onTap: () {
+                widget.onClickedSignIn(true, false);
+              },
+              child: const Text(
+                "Sign in",
+                style: TextStyle(
+                    fontSize: 15,
+                    color: Color(0xFF26235C),
+                    decoration: TextDecoration.underline),
+              ),
+            ),
           ],
         ),
       ),

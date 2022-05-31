@@ -9,6 +9,7 @@ import 'package:step_progress_indicator/step_progress_indicator.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import '../classes/new_user_informations.dart';
+import '../widgets/create_account_input_boxes.dart';
 import '../widgets/push_button.dart';
 
 
@@ -26,11 +27,13 @@ class _QuestionsPageState extends State<QuestionsPage> {
 
   @override
   void initState() {
-    // TODO: implement initState
+   
+
     super.initState();
   }
   @override
   Widget build(BuildContext context) {
+    
 
     return Scaffold(
       appBar: AppBar(
@@ -44,22 +47,22 @@ class _QuestionsPageState extends State<QuestionsPage> {
             fontStyle: FontStyle.italic,
           ),
         ),
-        actions: [
-          IconButton(
-              onPressed: () {
-                pageController.previousPage(
-                    duration: const Duration(milliseconds: 10),
-                    curve: Curves.bounceInOut);
-              },
-              icon: const Icon(FontAwesomeIcons.angleLeft)),
-          IconButton(
-              onPressed: () {
-                pageController.nextPage(
-                    duration: const Duration(milliseconds: 10),
-                    curve: Curves.bounceInOut);
-              },
-              icon: const Icon(FontAwesomeIcons.angleRight))
-        ],
+        // actions: [
+        //   IconButton(
+        //       onPressed: () {
+        //         pageController.previousPage(
+        //             duration: const Duration(milliseconds: 10),
+        //             curve: Curves.bounceInOut);
+        //       },
+        //       icon: const Icon(FontAwesomeIcons.angleLeft)),
+        //   IconButton(
+        //       onPressed: () {
+        //         pageController.nextPage(
+        //             duration: const Duration(milliseconds: 10),
+        //             curve: Curves.bounceInOut);
+        //       },
+        //       icon: const Icon(FontAwesomeIcons.angleRight))
+        // ],
       ),
       body: SafeArea(
         child: Padding(
@@ -90,6 +93,7 @@ class _QuestionsPageState extends State<QuestionsPage> {
                 children: const [
                   //name surname
                   //
+                  
                   GenderWidget(),
                   BirthdayWidget(),
                   StudyWidget(),
@@ -100,12 +104,38 @@ class _QuestionsPageState extends State<QuestionsPage> {
             Expanded(
               flex: 1,
               child:  
-         PushButton(butonyazisi:"Tamamla",
-         function:() {
-          NewUser.olustur();
-          Navigator.of(context).pushNamed("Home");
+         Row(
+           mainAxisAlignment: MainAxisAlignment.spaceAround,
+           children: [
+       ... currentstep==0?[]:     [PushButton(
+               textColor:  Colors.black,
+              backgroundColor: Colors.grey, 
+               butonyazisi:"Önceki",
+             width: 200,
+               function:() {
+                    pageController.previousPage(
+                    duration: const Duration(milliseconds: 10),
+                    curve: Curves.bounceInOut);
+              
         }
-        )
+        ),],
+          
+               PushButton(butonyazisi:currentstep==75 ?"Tamamla":"Sonraki",
+             width: 200,
+
+               function:() {
+                    
+                    pageController.nextPage(
+                    duration: const Duration(milliseconds: 10),
+                    curve: Curves.bounceInOut);
+                    if(pageController.page!<3) return;
+                NewUser.olustur();
+                Navigator.of(context).pushNamed("Home");
+        }
+    
+             ),
+           ],
+         )
        )  
           ]),
         ),

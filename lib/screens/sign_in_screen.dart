@@ -1,9 +1,11 @@
+import 'package:antello/screens/home_page.dart';
 import 'package:antello/screens/questions_page.dart';
 import 'package:antello/themes/app_colors.dart';
 import 'package:antello/widgets/purple_button.dart';
 import 'package:antello/widgets/push_button.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import '../classes/app_user.dart';
 import '../utils/authentication.dart';
 import 'package:url_launcher/url_launcher.dart';
 import '../widgets/google_sign_in_button.dart';
@@ -26,20 +28,29 @@ class _SignInScreenState extends State<SignInScreen> {
   void initState() {
     print("sign in screen");
 
-    FirebaseAuth.instance.authStateChanges().listen((User? user) {
+    FirebaseAuth.instance.authStateChanges().listen((User? user) async{
+      
       if (user == null) {
         setState(() {
           bekleyecekmiyiz = false;
         });
         debugPrint('User is currently signed out!');
       } else {
-        Navigator.of(context).pushReplacement(
+        UserMAnagement.fromUid(user.uid).then((value) {
+          if(value.birthDate!=""){
+                Navigator.of(context).pushNamed("Home");
+             
+          }else {
+  Navigator.of(context).pushReplacement(
           MaterialPageRoute(
             builder: (context) => QuestionsPage(
               user: user,
             ),
           ),
         );
+          }
+        });
+      
 
         print('User is signed in!');
       }
@@ -70,78 +81,85 @@ class _SignInScreenState extends State<SignInScreen> {
             bottom: 20.0,
           ),
           child: Center(
-            child: Column(
-              mainAxisAlignment: MainAxisAlignment.center,
-              mainAxisSize: MainAxisSize.max,
-              children: <Widget>[
-                const SizedBox(height: 80),
-              
-                        // SizedBox (width:250,height: 250,child: Image.asset("assets/icon.png")),
-                        //    const Expanded(child: Text(""),),
-                     
-                      
-            !signin ? Text(""):    LoginWidget(
-                  onclickedSignUp: toggle,
-                ),
-             !signup ? Text(""):    SignUp(
-                  onClickedSignIn: toggle,
-                ),
-              signin || signup ? Text(""):     PushButton(
-                          backgroundColor: AppColors.purple,
-                          butonyazisi: "Giriş Yap",
-                          function: () {
-                            setState(() {
-                              signin = true;
-                              signup=false;
-                            });
-                          },
-                        ),
-                        const SizedBox(height: 10),
-
-              signup||signin ? Text(""):          PushButton(
-                          textColor: AppColors.purple,
-                          backgroundColor: AppColors.background,
-                          butonyazisi: "Kayıt Ol",
-                          function: () {
-                            setState(() {
-                              signin=false;
-
-                            signup = true;
-                            });
-                          },
-                        ),
-                        const SizedBox(height: 10),
+            child: SingleChildScrollView(
+              child: Column(
+                mainAxisAlignment: MainAxisAlignment.center,
+                mainAxisSize: MainAxisSize.max,
+                children: <Widget>[
+                      Image(
+                        image:  AssetImage("assets/icon.png"),
+                        width: 200.0,
+                      ),
+                  const SizedBox(height: 80),
                 
-                FutureBuilder(
-                  future: Authentication.initializeFirebase(context: context),
-                  builder: (context, snapshot) {
-                    if (snapshot.hasError) {
-                      return const Text('Error initializing Firebase');
-                    } else {
-                      return GoogleSignInButton(
-                        const Key("GoogleSignInButton"),
-                        girildimi: bekleyecekmiyiz,
-                      );
-                    }
-                  },
-                ),
-                InkWell(
-                  onTap: () {
-                    _launchInBrowser(Uri(
-                        scheme: 'https',
-                        host: 'antello.firebaseapp.com',
-                        path: ''));
-                  },
-                  child: const Text(
-                    "Gizlilik Politikası",
-                    style: TextStyle(
-                        fontSize: 15,
-                        color: Colors.black,
-                        decoration: TextDecoration.underline),
+                          // SizedBox (width:250,height: 250,child: Image.asset("assets/icon.png")),
+                          //    const Expanded(child: Text(""),),
+                       
+                        
+              !signin ? Text(""):    LoginWidget(
+                    onclickedSignUp: toggle,
                   ),
-                ),
-                const SizedBox(height: 50),
-              ],
+               !signup ? Text(""):    SignUp(
+                    onClickedSignIn: toggle,
+                  ),
+                signin || signup ? Text(""):     PushButton(
+                            backgroundColor: AppColors.purple,
+                            butonyazisi: "Giriş Yap",
+                            function: () {
+                              setState(() {
+                                signin = true;
+                                signup=false;
+                              });
+                            },
+                          ),
+                          const SizedBox(height: 10),
+
+                signup||signin ? Text(""):          PushButton(
+                            textColor: AppColors.purple,
+                            backgroundColor: AppColors.background,
+                            butonyazisi: "Kayıt Ol",
+                            function: () {
+                              setState(() {
+                                signin=false;
+
+                              signup = true;
+                              });
+                            },
+                          ),
+                          const SizedBox(height: 10),
+                  
+                  // FutureBuilder(
+                  //   future: Authentication.initializeFirebase(context: context),
+                  //   builder: (context, snapshot) {
+                  //     if (snapshot.hasError) {
+                  //       return const Text('Error initializing Firebase');
+                  //     } else {
+                  //       return GoogleSignInButton(
+                  //         const Key("GoogleSignInButton"),
+                  //         girildimi: bekleyecekmiyiz,
+                  //       );
+                  //     }
+                  //   },
+                  // ),
+                
+                  InkWell(
+                    onTap: () {
+                      _launchInBrowser(Uri(
+                          scheme: 'https',
+                          host: 'antello.firebaseapp.com',
+                          path: ''));
+                    },
+                    child: const Text(
+                      "Gizlilik Politikası",
+                      style: TextStyle(
+                          fontSize: 15,
+                          color: Colors.black,
+                          decoration: TextDecoration.underline),
+                    ),
+                  ),
+                  const SizedBox(height: 50),
+                ],
+              ),
             ),
           ),
         ),

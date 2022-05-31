@@ -67,7 +67,7 @@ class _LoginWidgetState extends State<LoginWidget> {
                      widget.onclickedSignUp(false,true);
                   },
                   child: const Text(
-                    "Sign In",
+                    "Sign Up",
                     style: TextStyle(
                         fontSize: 15,
                         color:  Color(0xFF26235C),

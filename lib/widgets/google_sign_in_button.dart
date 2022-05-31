@@ -71,18 +71,20 @@ class _GoogleSignInButtonState extends State<GoogleSignInButton> {
                       image:  AssetImage("assets/google_logo.png"),
                       height: 35.0,
                     ),
-                    Padding(
-                      padding: EdgeInsets.only(left: 10),
-                      child: Text(
-                        'Google ile giriş yap',
-                        style: TextStyle(
-                          fontSize: 20,
-                          color: Colors.black54,
-                          fontWeight: FontWeight.w600,
-                        ),
-                      ),
-                    )
+                    // Padding(
+                    //   padding: EdgeInsets.only(left: 10),
+                    //   child: Text(
+                    //     'Google ile giriş yap',
+                    //     style: TextStyle(
+                    //       fontSize: 20,
+                    //       color: Colors.black54,
+                    //       fontWeight: FontWeight.w600,
+                    //     ),
+                    //   ),
+                    // )
+              
                   ],
+              
                 ),
               ),
             ),

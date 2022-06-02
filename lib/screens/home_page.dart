@@ -31,16 +31,7 @@ class _HomePageState extends State<HomePage>  with TickerProviderStateMixin  {
       
         debugPrint('User is currently signed out!');
       } else {
-        UserMAnagement.fromUid(user.uid).then((value) {
-          if(value.birthDate!=""){
-                Navigator.of(context).pushNamed("Home");
-             
-          }else {
-              _user=user;
-          }
-        });
-      
-
+        user=_user;
         print('User is signed in!');
       }
     });
@@ -77,7 +68,7 @@ class _HomePageState extends State<HomePage>  with TickerProviderStateMixin  {
 
     controller.animateTo(page, duration: Duration(milliseconds:200));
     if(page==3){
-    Navigator.of(context).pushNamed("SignIn");
+    Navigator.of(context).pushNamed("/SignIn");
 
     }
 

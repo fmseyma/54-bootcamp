@@ -55,8 +55,8 @@ class _MatchQuestionWidgetState extends State<MatchQuestionWidget> {
         Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
-            PurpleButton(answer: matchQuestion.answers.entries.first, function: (_x){},),
-            PurpleButton(answer: matchQuestion.answers.entries.elementAt(1), function: (_x){},),
+            PurpleButton(answer: matchQuestion.answers.first, function: (_x){},),
+            PurpleButton(answer: matchQuestion.answers.elementAt(1), function: (_x){},),
           ],
         )
       ],),

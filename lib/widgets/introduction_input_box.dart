@@ -1,3 +1,4 @@
+import 'package:antello/classes/new_user_informations.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
@@ -15,7 +16,9 @@ class _IntroductionInputBoxState extends State<IntroductionInputBox> {
   @override
   void initState() {
     super.initState();
-    _controller.addListener(() => setState(() {}));
+    _controller.addListener(() => setState(() {
+      NewUser.bio=_controller.text;
+    }));
   }
 
   @override
@@ -25,9 +28,7 @@ class _IntroductionInputBoxState extends State<IntroductionInputBox> {
       height: 200,
 
       child: TextFormField(
-        inputFormatters: [
-          FilteringTextInputFormatter.allow(RegExp("[a-zA-Z]")),
-        ],
+  
         controller: _controller,
         maxLines: 20,
         maxLength: 300,

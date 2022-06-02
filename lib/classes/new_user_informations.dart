@@ -13,6 +13,7 @@ class NewUser {
   static String nickname = "";
   static String mail = "";
   static String password = "";
+  static String bio = "";
 
   static String uid = "";
   static SnackBar customSnackBar({required String content}) {
@@ -54,7 +55,7 @@ class NewUser {
   static olustur() {
     Map<String, dynamic> newmap = {};
     newmap.addAll(
-      {
+     {  uid:nickname ,nickname:   {
         "name": name,
         "surname": surname,
         "department": department,
@@ -62,12 +63,16 @@ class NewUser {
         "birthday": birthday.toString(),
         "nickname": nickname,
         "mail": mail,
-        "secret": {uid: true, "password": password}
-      },
+        "bio": bio,
+        "url":"",
+        "secret":{uid.toString(): true, "password": password},
+       
+      },}
     );
     final database = FirebaseDatabase.instance;
-    DatabaseReference messagesRef = database.ref('Users/$nickname');
-    messagesRef.set(newmap);
-    print("newuser Oluşturuldu");
+    
+    DatabaseReference messagesRef = database.ref('Users/');
+    messagesRef.set(newmap).then((value){ print("newuser Oluşturuldu");});
+   
   }
 }

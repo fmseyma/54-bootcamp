@@ -10,13 +10,27 @@ class ExploreTab extends StatefulWidget {
 }
 
 class _ExploreTabState extends State<ExploreTab> {
+  
   List<Widget> userCharts(int s){
     List<Widget> _i = [];
-    while(_i.length<s){
-      _i.add(UserChart(appUser: UserMAnagement.sampleUser));
-      
+    for(var i in UserMAnagement.allusers){
+      _i.add(UserChart(appUser: i));
+
     }
+    // while(_i.length<s){
+    //   _i.add(UserChart(appUser: UserMAnagement.sampleUser));
+      
+    // }
+    
     return _i;
+  }
+  @override
+  void initState() {
+    // TODO: implement initState
+    UserMAnagement.randomUser(5).then((value) => setState(() {
+      
+    },));
+    super.initState();
   }
   @override
   Widget build(BuildContext context) {

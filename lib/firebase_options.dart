@@ -24,7 +24,10 @@ class DefaultFirebaseOptions {
       case TargetPlatform.android:
         return android;
       case TargetPlatform.iOS:
-        return ios;
+        throw UnsupportedError(
+          'DefaultFirebaseOptions have not been configured for ios - '
+          'you can reconfigure this by running the FlutterFire CLI again.',
+        );
       case TargetPlatform.macOS:
         throw UnsupportedError(
           'DefaultFirebaseOptions have not been configured for macos - '
@@ -43,6 +46,7 @@ class DefaultFirebaseOptions {
     messagingSenderId: '777664211507',
     projectId: 'antello',
     authDomain: 'antello.firebaseapp.com',
+    databaseURL: 'https://antello-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'antello.appspot.com',
     measurementId: 'G-9R8EY68Y3H',
   );
@@ -52,16 +56,7 @@ class DefaultFirebaseOptions {
     appId: '1:777664211507:android:64a00b97c44cef71451146',
     messagingSenderId: '777664211507',
     projectId: 'antello',
+    databaseURL: 'https://antello-default-rtdb.europe-west1.firebasedatabase.app',
     storageBucket: 'antello.appspot.com',
-  );
-
-  static const FirebaseOptions ios = FirebaseOptions(
-    apiKey: 'AIzaSyBJFr9O7etqkBqQdAxiMpMrnjPFiZbVlfo',
-    appId: '1:777664211507:ios:e5ba10946de8c39a451146',
-    messagingSenderId: '777664211507',
-    projectId: 'antello',
-    storageBucket: 'antello.appspot.com',
-    iosClientId: '777664211507-p3ak8d87ald97d6s8hqnjjlv4k9jobcs.apps.googleusercontent.com',
-    iosBundleId: 'com.antello',
   );
 }

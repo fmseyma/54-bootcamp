@@ -36,20 +36,22 @@ class _SignInScreenState extends State<SignInScreen> {
         });
         debugPrint('User is currently signed out!');
       } else {
-        UserMAnagement.fromUid(user.uid).then((value) {
-          if(value.birthDate!=""){
-                Navigator.of(context).pushNamed("Home");
+
+  //       UserMAnagement.fromUid(user.uid).then((value) {
+
+  //         if(value.department!=""){
+  //               Navigator.of(context).pushNamed("/");
              
-          }else {
-  Navigator.of(context).pushReplacement(
-          MaterialPageRoute(
-            builder: (context) => QuestionsPage(
-              user: user,
-            ),
-          ),
-        );
-          }
-        });
+  //         }else {
+  // Navigator.of(context).pushReplacement(
+  //         MaterialPageRoute(
+  //           builder: (context) => QuestionsPage(
+  //             user: user,
+  //           ),
+  //         ),
+  //       );
+  //         }
+  //       });
       
 
         print('User is signed in!');

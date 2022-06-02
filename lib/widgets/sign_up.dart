@@ -1,5 +1,9 @@
+import 'package:antello/classes/new_user_informations.dart';
+import 'package:antello/screens/questions_page.dart';
 import 'package:email_validator/email_validator.dart';
 import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
+import 'package:firebase_database/firebase_database.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
@@ -19,14 +23,20 @@ class SignUp extends StatefulWidget {
 
 class _SignUpState extends State<SignUp> {
   final formKey = GlobalKey<FormState>();
+  bool nickvalue = false;
   final emailController = TextEditingController();
   final passwordController = TextEditingController();
   TextEditingController isim = TextEditingController(),
       soyisim = TextEditingController(),
       nick = TextEditingController(),
-      mail = TextEditingController(),
-      password = TextEditingController(),
+
       password1 = TextEditingController();
+
+  @override
+  void initState() {
+    // TODO: implement initState
+    super.initState();
+  }
 
   @override
   void dispose() {
@@ -48,7 +58,8 @@ class _SignUpState extends State<SignUp> {
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
               child: TextFormField(
                 controller: isim,
-                validator: (email) => !(email != null && email!="") ? " Enter a name" : null,
+                validator: (email) =>
+                    !(email != null && email != "") ? " Enter a name" : null,
                 decoration: const InputDecoration(
                   border: UnderlineInputBorder(),
                   labelText: 'İsim',
@@ -59,7 +70,8 @@ class _SignUpState extends State<SignUp> {
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
               child: TextFormField(
                 controller: soyisim,
-                validator: (email) => !(email != null && email!="") ? " Enter a surname" : null,
+                validator: (email) =>
+                    !(email != null && email != "") ? " Enter a surname" : null,
                 decoration: const InputDecoration(
                   border: UnderlineInputBorder(),
                   labelText: 'Soyisim',
@@ -70,8 +82,13 @@ class _SignUpState extends State<SignUp> {
               padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
               child: TextFormField(
                 controller: nick,
-                validator: (email) =>
-                    !(email != null && email!="") ? " Enter a nickname" : null,
+                validator: (username) {
+                  if (!(username != null && username != ""))
+                    return " Enter a nickname";
+                  if (nickvalue) return "Bu kullanıcı adı alınmış";
+
+                  return null;
+                },
                 decoration: const InputDecoration(
                   border: UnderlineInputBorder(),
                   labelText: 'Kullanıcı Adı',
@@ -152,21 +169,48 @@ class _SignUpState extends State<SignUp> {
   }
 
   Future signUp() async {
+    final database = FirebaseDatabase.instance;
+    DatabaseReference messagesRef = database.ref('Users/${nick.text}');
+    await messagesRef.once().then((value) {
+      nickvalue = value.snapshot.exists;
+     if(nickvalue) print("bu kullanıcı adı var");
+    });
     final isValid = formKey.currentState!.validate();
+
+    if (nickvalue) return;
+    print("bu kullanıcı adı yok");
+
     if (!isValid) return;
+
+    NewUser.mail=  emailController.text ;
+    NewUser.password=  passwordController .text; 
+    NewUser.name= isim  .text; 
+     NewUser.surname=  soyisim  .text; 
+     NewUser.nickname=  nick  .text; 
     showDialog(
         context: context,
         builder: ((context) => Center(
               child: CircularProgressIndicator(),
             )));
     try {
-      await FirebaseAuth.instance.createUserWithEmailAndPassword(
+    late  User k;  
+    await FirebaseAuth.instance.createUserWithEmailAndPassword(
           email: emailController.text.trim(),
-          password: passwordController.text.trim());
+          password: passwordController.text.trim()).then((value) => k=value.user!);
+
+
+
+              Navigator.of(context).pushReplacement(
+          MaterialPageRoute(
+            builder: (context) => QuestionsPage(
+              user :k
+            ),
+          ),
+        );
     } on FirebaseAuthException catch (e) {
       print(e);
       Email.showSnackBar(e.message);
     }
-    navigatorKey.currentState!.popUntil((route) => route.isFirst);
+ 
   }
 }

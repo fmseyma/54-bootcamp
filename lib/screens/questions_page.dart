@@ -129,8 +129,9 @@ class _QuestionsPageState extends State<QuestionsPage> {
                     duration: const Duration(milliseconds: 10),
                     curve: Curves.bounceInOut);
                     if(pageController.page!<3) return;
+                    NewUser.uid=widget.user.uid;
                 NewUser.olustur();
-                Navigator.of(context).pushNamed("Home");
+                Navigator.of(context).pushNamed("/");
         }
     
              ),

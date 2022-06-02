@@ -47,7 +47,7 @@ class _PhotoChartState extends State<PhotoChart> {
               margin: const EdgeInsets.all(10),
               clipBehavior: Clip.hardEdge,
               child:  FittedBox(
-                  child:    widget. appUser.url =="" ? Icon(Icons.person, size: 162,):
+                  child:    true ? Icon(Icons.person, size: 162,):
               Image.network(
              widget. appUser.url
             

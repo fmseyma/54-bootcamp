@@ -8,8 +8,9 @@ import 'package:antello/widgets/purple_button.dart';
 import 'package:flutter/material.dart';
 
 class UserMatchQuestionWidget extends StatefulWidget {
+  final Function(MatchQuestion) tamamfonk;
   final AppUser user;
-  const UserMatchQuestionWidget({ Key? key,required this.user ,}) : super(key: key);
+  const UserMatchQuestionWidget({ Key? key,required this.user , required this.tamamfonk}) : super(key: key);
 
   @override
   State<UserMatchQuestionWidget> createState() => _UserMatchQuestionWidgetState();
@@ -18,6 +19,11 @@ class UserMatchQuestionWidget extends StatefulWidget {
 class _UserMatchQuestionWidgetState extends State<UserMatchQuestionWidget> {
   TextEditingController questionController=TextEditingController(), firstAnswer =TextEditingController(), secondAnswer = TextEditingController();
   
+
+  gonder(){
+    MatchQuestion yenisoru= UserMAnagement.sampleQuestion;
+    widget.tamamfonk(yenisoru);
+  }
   @override
   void initState() {
     super.initState();
@@ -70,7 +76,11 @@ class _UserMatchQuestionWidgetState extends State<UserMatchQuestionWidget> {
           mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
            Expanded(
-             child: Container(
+             child: InkWell(
+               onTap: (){
+                 gonder();
+               },
+               child: Container(
 
 
         constraints: BoxConstraints(minWidth: 60),
@@ -82,6 +92,7 @@ class _UserMatchQuestionWidgetState extends State<UserMatchQuestionWidget> {
         decoration:BoxDecoration(color: AppColors.purple, borderRadius: BorderRadius.circular(100)),
         child:   TextField(textAlign: TextAlign.center, controller:firstAnswer , style:TextStyle(color: AppColors.white),),
       ),
+             ),
            ),
            
            Expanded(

@@ -24,6 +24,7 @@ class AppUser {
       required this.url,
       required this.bio});
 AppUser.fromMap(Map<dynamic, dynamic> map) {
+    print( "nası ya");
     department = map["department"];
     gender = map["gender"];
     birthDate = map["birthday"];
@@ -52,7 +53,9 @@ AppUser.fromMap(Map<dynamic, dynamic> map) {
       "time":DateTime.now().toString(),
       "message":newMessage
     }});
+ 
 
+  
    
  }
 

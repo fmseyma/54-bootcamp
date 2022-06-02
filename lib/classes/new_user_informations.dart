@@ -55,7 +55,7 @@ class NewUser {
   static olustur() {
     Map<String, dynamic> newmap = {};
     newmap.addAll(
-     {  uid:nickname ,nickname:   {
+        {
         "name": name,
         "surname": surname,
         "department": department,
@@ -67,11 +67,12 @@ class NewUser {
         "url":"",
         "secret":{uid.toString(): true, "password": password},
        
-      },}
+      },
     );
     final database = FirebaseDatabase.instance;
     
-    DatabaseReference messagesRef = database.ref('Users/');
+    DatabaseReference messagesRef = database.ref('Users/$nickname');
+    database.ref("uids/").set({uid:nickname});
     messagesRef.set(newmap).then((value){ print("newuser Oluşturuldu");});
    
   }

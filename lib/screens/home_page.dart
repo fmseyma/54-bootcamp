@@ -52,7 +52,6 @@ class _HomePageState extends State<HomePage>  with TickerProviderStateMixin  {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.background,
-      appBar: AppBar(),
       bottomNavigationBar: BottomNavigationWidget( gopage: goPage, currentIndex: tabindex,)
 ,
       body: TabBarView( controller: controller, children: tabs,) );

@@ -13,8 +13,27 @@ class MatchTab extends StatefulWidget {
 }
 
 class _MatchTabState extends State<MatchTab> {
+
+  @override
+  void initState() {
+   birincieleman=UserMatchQuestionWidget(user: UserMAnagement.sampleUser, tamamfonk:tamamfonk);
+    // TODO: implement initState
+    super.initState();
+  }
+  late Widget birincieleman;
+  tamamfonk(MatchQuestion question){
+  birincieleman=MatchQuestionWidget(matchQuestion: question);
+   setState(() {
+     
+   });
+
+  }
+  
+
   List<Widget> matchQuestions(int s){
-    List<Widget> _i = [UserMatchQuestionWidget(user: UserMAnagement.sampleUser)];
+
+    List<Widget> _i = [birincieleman];
+
     while(_i.length<s){
       _i.add(MatchQuestionWidget(matchQuestion: UserMAnagement.sampleQuestion));
       

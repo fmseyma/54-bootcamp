@@ -65,12 +65,28 @@ class _UserMatchQuestionWidgetState extends State<UserMatchQuestionWidget> {
       
             Padding(
               padding: const EdgeInsets.only(bottom: 8),
-              child: Row(children:[ 
-                 Expanded(flex:1 ,child: Text("")),
-                 Expanded(flex:3 ,child: TextField( controller:questionController ,)),
-                 Expanded(flex:1,child: Text(""))
-                 
-              ] ),
+              child: Row(children: [
+              Expanded(
+                  flex: 3,
+                  child: TextField(
+                    controller: questionController,
+                  )),
+              ElevatedButton(
+                  style: ElevatedButton.styleFrom(
+                      fixedSize: Size(50, 50),
+                      primary: Colors.yellow,
+                      elevation: 6,
+                      shape: CircleBorder()),
+                  onPressed: () => {
+                        gonder(),
+                        print(firstAnswer.text),
+                        print(secondAnswer.text)
+                      },
+                  child: Text(
+                    "+",
+                  ))
+            ]
+               ),
             ),
             Row(
           mainAxisAlignment: MainAxisAlignment.spaceAround,

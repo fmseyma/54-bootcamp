@@ -14,16 +14,15 @@ APOLLO - 54
 
 ## Ürün Açıklaması
 - Formica uygulaması insanların ders çalışma arkadaşı edinmesini kolaylaştırmak için tasarlanmıştır.  
-- Kullanıcının çalışma alanı seçmesi üzerine bu alanda çalışan kişilerin profillerini kolaylıkla görüntüleyebilmesi sağlanmaktadır.
-- Ayrıca kullanıcı iki seçeneği olan sorular yayınlayabilecektir. 
-- Bu sorulara diğer kullanıcıların verdiği cevaplara göre yeni arkadaşlar edinebilmesi için Soru Tahtası bölümü bulunmaktadır.
+- Kullanıcının kişilerin profillerini kolaylıkla görüntüleyebilmesi ve ilgisini çeken kişilerle iletişime geçebilmesi sağlanmaktadır.
+- Kullanıcının kendisi ile aynı fikirde olan insanlarla eşleşebilmesi için iki şıklı sorular yayınlayabilme imkanı bulunmaktadır. 
+- Bu sorulara diğer kullanıcıların verdiği cevaplara göre yeni arkadaşlar edinebilmesi için Soru Tahtası sayfası oluşturulmuştur.
 
 ## Ürün Özellikleri
 - Kullanıcıya kendini anlatabileceği bir profil yazısı yazabilme imkanı
-- Seçenekler arasından ya da direkt bir kullanıcı ile iletişime geçebilme
-- Kullanıcıya soru yayınlama ve detaylı cevap verebilme imkanı
-- Profil oluşturma ve profillere göre kişilerle tanışabilme
-- 24 saat süreli mesaj gönderebilme
+- Keşfet Sayfası'ndaki kullanıcı seçenekleri arasından ya da Soru Tahtası üzerinden verilen doğru cevaba göre bir kullanıcı ile iletişime geçebilme
+- Kullanıcıya soru yayınlama imkanı, soruyu yayınlayan kişi ile mesajlaşabilme
+- Profil oluşturma ve profillerine göre kullanıcılara mesaj gönderebilme
 
 ## Hedef Kitle
 - Öğrenciler

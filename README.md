@@ -116,11 +116,12 @@ https://trello.com/b/4gdXGui0/apollo-54sprint3
 
 - **Ürün Durumu:** Ekran görüntüleri: https://docs.google.com/document/d/17jukc6h3U5w_vJMj5trpBcrJ0M4Fma1i/edit
 
-- **Sprint Review:** Alınan kararlar:  Sprint Review katılımcıları: Nurullah DEMİR, F. Şeyma UĞUZ, Yusuf ÖZİL, Seyit Mustafa DEMİR, Aylin ALBAYRAK
+- **Sprint Review:** Konuşulan kararlar: Bootcamp süreci bittikten sonra projeyi gerçekleştirmek adına yapılabilecekler konuşulmuştur. Bootcamp için gerekli videoda bulunması gerekenler hatırlatılmıştır. Sprint Review katılımcıları: Nurullah DEMİR, F. Şeyma UĞUZ, Yusuf ÖZİL, Seyit Mustafa DEMİR, Aylin ALBAYRAK
 
-- **Sprint Retrospective:**
-  - 
-  -            
+- **Sprint Retrospective (PROJE KAPANIŞ TOPLANTISI):**
+  - Uygulama için düşünülen çıkış fikri %90 oranında uygulamada yapılabilmiştir.
+  - Bu süreçte herkes gerekli fedakarlığı yapmış, uygulama sonucu ekibi mutlu etmiştir.
+  - Gerekli yerlere yönlendirmesi yapılmayan widget'lar bulunsa da uygulamanın birçok ana özelliğinin çalışması ekibin gelecek çalışmalar için motivasyonunu artırmıştır.
 
 -**Diğer Notlar:**
 - N/A
